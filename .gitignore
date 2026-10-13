@@ -1,0 +1,39 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# next.js build
+/.next/
+/out/
+/build
+
+# environment & database
+.env
+.env*.local
+prisma/*.db
+prisma/*.db-journal
+
+# nested backup folder
+Study-Explain-AI-App-main/
+
+# testing & logs
+/coverage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# misc & OS
+.DS_Store
+*.pem
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
