@@ -1,6 +1,8 @@
 import { GoogleGenerativeAI } from '@google/generative-ai'
 import { NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 // Fallback high-quality content generator for common topics if offline or testing without key
 function getFallbackExplanation(topic: string, mode: string, context?: string): string {
   const t = topic.trim()

@@ -2,6 +2,8 @@ import { GoogleGenerativeAI } from '@google/generative-ai'
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 
+export const dynamic = 'force-dynamic'
+
 function generateFallbackFlashcards(explanation: string): Array<{ question: string; answer: string }> {
   const cards: Array<{ question: string; answer: string }> = []
   const lines = explanation.split('\n')
